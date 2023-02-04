@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -9,11 +11,15 @@ nav {
 nav a{
     text-decoration: none;
     color:#D6D6D6;
+    padding: 35px;
 }
 nav a:hover{
     color:#D6D6D6;
     background-color: #7E80A0;
     text-decoration: underline;
+}
+#hero-img {
+    width: 100%;
 }
 #hero-msg h1 {
     text-align: center;
@@ -27,20 +33,35 @@ nav a:hover{
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 #background {
     height: 725px;
     background-color: #373E7C;
 }
 body {
+    font-size: 22px;
+    font-family: Raleway, Georgia, "Times New Roman";
     background-color: #D6D6D6;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 header {
     background-color: #373E7C;
+    font-family: Ubuntu, Georgia, "Times New Roman";
 }
 .book {
+    font-size: 18px;
     text-decoration: none;
     color: #D6D6D6;
     background-color: #373E7C;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover {
     color: #D6D6D6;
@@ -48,26 +69,39 @@ header {
     text-decoration: underline;
 }
 .join {
+    font-size: 18px;
     text-decoration: none;
     color: #D6D6D6;
     background-color: #373E7C;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join:hover {
     color: #D6D6D6;
     background-color: #7E80A0;
     text-decoration: underline;
 }
+.msg{
+    line-height: 1.5em;
+    padding: 35px;
+}
 .msg h2{
     color: #D6D6D6;
     background-color: #373E7C;
+    font-family: Ubuntu, Georgia, "Times New Roman";
 }
 .msg p{
+    font-size: .8em;
     color: #D6D6D6;
     background-color: #373E7C;
+    padding-bottom: 15px;
 }
 footer {
     color: #D6D6D6;
     background-color: #373E7C;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p {
     font-size: 1.2em;
@@ -84,12 +118,34 @@ footer a:hover {
     color: #D6D6D6;
     background-color: #7E80A0;
 }
+footer .social img {
+    padding-top: 15px;
+}
 .home-title {
     color: #373E7C;
+    font-size: 2em;
+    font-family: Ubuntu, Georgia, "Times New Roman";
+    margin-top: 10px;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 .logo {
     width: 80px;
+}
+#logo_link {
+    padding-top: 5px;
+}
+.rivers-card {
+    margin: 200px 0
+}
+.camping-card {
+    margin: 200px 0
+}
+.rapids-card {
+    margin: 200px 0
+}
+.card-img {
+    border: 10px solid black;
 }
