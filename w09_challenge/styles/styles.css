@@ -1,0 +1,23 @@
+#content {
+    background-color: white;
+}
+body {
+    width: 300px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 20px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: steelblue;
+    color: white;
+}
+#views {
+    border-left: 2px gray solid;
+    border-right: 2px gray solid;
+}
+#message-header h3{
+    color: steelblue;
+}
+
