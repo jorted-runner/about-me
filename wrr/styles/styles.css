@@ -240,7 +240,6 @@ footer .social img {
     align-self: center;
     margin: 10px;
     box-shadow: 5px 5px 10px black;
-    width: 1fr;
 }
 #salmon-info-p1 {
     grid-column: 2;
@@ -265,7 +264,6 @@ footer .social img {
     align-self: center;
     margin: 10px;
     box-shadow: 5px 5px 10px black;
-    width: 1fr;
 }
 #deso-info-p1 {
     grid-column: 2;
@@ -291,7 +289,6 @@ footer .social img {
     justify-self: center;
     margin: 10px;
     box-shadow: 5px 5px 10px black;
-    height: 1fr;
 }
 #canyon-info-p1 {
     grid-column: 2;
