@@ -50,6 +50,7 @@ nav a:hover{
     width: 100%;
 }
 #hero-msg {
+    font-family: Trebuchet(sans-serif);
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
@@ -75,6 +76,9 @@ nav a:hover{
     grid-row: 1;
     margin: 75px 50px 50px 100px;
     box-shadow: 5px 5px 10px black;
+}
+.home-text {
+    font-family: Georgia (serif);
 }
 #home-p1 {
     grid-column: 2/5;
