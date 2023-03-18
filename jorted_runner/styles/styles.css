@@ -84,14 +84,15 @@ nav a:hover{
 #home-p4 {
     grid-column: 1/4;
     grid-row: 2;
-    margin: 50px;
+    margin: -25px 50px 50px 50px;
 }
 #jorted-runners {
-    margin: 50px;
+    margin: -25px 50px 50px 50px;
     box-shadow: 5px 5px 10px black;
 }
 
 #pr-list {
+    margin: -25px 50px -150px 50px;
     background-color: #0C3146;
     color: #ECEBE2;
     box-shadow: 5px 5px 10px black;
