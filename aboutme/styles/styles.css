@@ -1,0 +1,18 @@
+/* Colors: F9F5EB, E4DCCF, EA5455, 002B5B */
+
+body {
+    background-color: #F9F5EB;
+}
+hr {
+    border-style: none;
+    border-top-style: dashed;
+    border-color: #E4DCCF;
+    border-width: 5px;
+    width: 40%;
+}
+h1 {
+    color: #002B5B;
+}
+h3 {
+    color:#002B5B;
+}
