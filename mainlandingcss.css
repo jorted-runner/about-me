@@ -61,6 +61,10 @@ p {
 
 }
 
+hr {
+    width: 100%
+}
+
 .profile img {
     width: 25%;
     margin: 100px 30px;
