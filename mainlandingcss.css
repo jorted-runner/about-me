@@ -60,11 +60,9 @@ p {
     line-height: 2;
 
 }
-
-hr {
-    width: 100%
+.project-hr {
+    width: 100%;
 }
-
 .profile img {
     width: 25%;
     margin: 100px 30px;
