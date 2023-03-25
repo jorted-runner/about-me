@@ -58,5 +58,3 @@ function magnify(imgID, zoom) {
       return {x : x, y : y};
     }
   }
-
-  

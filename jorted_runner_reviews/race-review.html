@@ -28,29 +28,38 @@
                 <h1 class="hero-title">Race Reviews</h1>
             </section>
         </div>
+
+        
+
         <main class="home-grid">
-            <section id="utv-marathon-card" class="shoebox"> 
-                <img class="card-img" src="images/utv-marthon.JPG" alt="Utah Valley Marathon">
-                <h2>Utah Valley Marathon</h2>
-            </section>
-            <section id="utv-info" class="expanded-shoebox">
+            <!--  -->
+
+        <!-- Trigger/Open The Modal -->
+        <button id="utah-button"><img class="button-img" src="images/utv-marthon.jpg" alt="View More"><br><h2>Utah Valley Marathon</h2></button>
+
+        <!-- The Modal -->
+        <div id="utah-modal" class="modal">
+
+         <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
                 <img class="card-img" id="utv-expanded-img" src="images/utv-marthon.JPG" alt="Utah Valley Marathon">
                 <h2>Utah Valley Marathon</h2>
                 <div id="utv-synopsis">
                     <p>
                         The Utah Valley Marathon is a point to point race that traverses from Wallesburg down Provo Canyon and finally down 
                         University Ave. ending just outside of the Provo Town Center Temple. The start is quite early, starting at 6:00 AM.
-                         Since Wallesburg is a tiny town with essentially one road you can only get to the start line via shuttle. I chose to
-                          shuttle in from Heber City where my grandparents live, meaning the drive was a little shorter and I could take the 
-                          shuttle at around 5:00 AM. I woke up around 4:00 AM to eat breakfast. I made it to the start line pretty early, around
-                           5:20 and was greeted with by the cold.
+                            Since Wallesburg is a tiny town with essentially one road you can only get to the start line via shuttle. I chose to
+                            shuttle in from Heber City where my grandparents live, meaning the drive was a little shorter and I could take the 
+                            shuttle at around 5:00 AM. I woke up around 4:00 AM to eat breakfast. I made it to the start line pretty early, around
+                            5:20 and was greeted with by the cold.
                     </p>
                     <p>
                         I ended up lying on the ground huddle under a thin hoody I planned on throwing away shivering trying to stay warm.
-                         I remember shivering and finally going to warm up at around 5:40. I was warmed up and standing near the start line, 
-                         just wondering when the race was going to start. I don’t remember there being very much direction or guidance on where
-                          we needed to go, what groups there were, or any division my expected finish time. 6:00 ended up coming and going, the 
-                          race wound up starting at 6:15 after lots of confusion.
+                            I remember shivering and finally going to warm up at around 5:40. I was warmed up and standing near the start line, 
+                            just wondering when the race was going to start. I don’t remember there being very much direction or guidance on where
+                            we needed to go, what groups there were, or any division my expected finish time. 6:00 ended up coming and going, the 
+                            race wound up starting at 6:15 after lots of confusion.
                     </p>
                     <p>
                         Once the race started things were a lot smoother, The course was well marked with cones indicating where to go, mile 
@@ -68,7 +77,7 @@
                         quads but provide just a nice little bit of gravitational aide.
                     </p>
                 </div>
-                </div>
+
                 <div>
                     <h3 id="utv-scores">Scores</h3>
                     <p>Organization: 6/10</p>
@@ -76,48 +85,240 @@
                     <p>Course Quality: 7.5/10</p>
                     <p>Overall: 7.2/10</p>
                 </div>
-            </section>
-            <section id="coldwater-card" class="shoebox">
-                <img class="card-img" src="images/coldwater_01.jpg" alt="Cold Water Group">
-                <h2>Cold Water Rumble 100 Miler</h2>
-            </section>
-            <section id="cold-info" class="expanded-shoebox">
-                <img class="card-img" id="cold-expanded-img" src="images/coldwater_01.jpg" alt="Cold Water Group">
-                <h2>Cold Water Rumble 100 Miler</h2>
-                <div id="cold-synopsis">
+            </div>
+
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("utah-modal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("utah-button");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+        <!-- cold Water -->
+        <!-- Trigger/Open The Modal -->
+
+<!-- I need to go through and change the id to make them uniqe and then update the ID in the JS script too -->
+
+        <!-- <button id="myBtn">Open Modal</button> -->
+        <button id="cold-button"><img class="button-img" src="images/coldwater_01.jpg" alt="View More"><br><h2>Coldwater Rumber 100 Miler</h2></button>
+
+        <!-- The Modal -->
+        <div id="cold-modal" class="modal">
+
+         <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <section id="utv-info" class="expanded-shoebox">
+                    <img class="card-img" id="utv-expanded-img" src="images/coldwater_01.jpg" alt="Coldwater 100">
+                    <h2>Coldwater Rumber 100 Miler</h2>
+                    <div id="cold-synopsis">
+                        <p>
+                            This race is a party. It’s an Aravaipa Trail race so they have multiple races of different distance going at the same 
+                            time. If you’ve never run an Aravaipa race I would highly recommend it. They know how to make a race feel like an event, 
+                            every aid-station has a loud speaker with music, hot food, and lots of volunteers! The chicken noodle soup and grilled cheese
+                            were life savers later on in the race.
+                        </p>
+                        <p>
+                            For the hundred-mile distance it was a 20-mile loop that was repeated 5 times. I think that for a first time 100 Miler 
+                            it was great to do loops. It allowed me to see my support crew every 20 miles, refill my pack with the fuel I wanted. 
+                            It provided an easy way for me to recognize progress. I don’t know if I would do a looped course again in the future 
+                            because I love the exploration aspect of trail running and repeating the same loop repeatedly doesn’t feel quite as 
+                            exciting.
+                        </p>
+                        <p>
+                            The loop it self comprise of some rolling desert hills, as the trail winds through the washes of the Arizona desert you 
+                            often get to be in the shade and sand or in the sun and on the rocky trails. The Trails weren’t too technical but did 
+                            provide some fun sections of flowy downhill, technical steep descents, and grueling climbs. The worst part of each loop 
+                            was the sandy double track that lasted several miles. It was uphill in one of the directions that added to the grind of 
+                            that section.  
+                        </p>
+                        <p>
+                            As I stated at the beginning, I would recommend Aravaipa races to anyone. They are very well organized and super fun. 
+                            As far as recommending the 100 mile distance at the Cold Water Rumble, I would say if you want to get your first 100 miler
+                             done it would be a great choice, if you’re from the Arizona area and a 100 miler veteran then this won’t provide much 
+                             novelty and probably wont be that exciting for you.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 id="cold-scores">Scores</h3>
+                        <p>Organization: 9/10</p>
+                        <p>Aid-Stations: 10/10</p>
+                        <p>Course Quality: 7/10</p>
+                        <p>Overall: 8.7/10</p>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("cold-modal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("cold-button");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+        <!--  -->
+
+        <!-- <button id="myBtn">Open Modal</button> -->
+        <button id="bear-button"><img class="button-img" src="images/bear_trap.png" alt="View More"><br><h2>Bear Trap 15 Miler</h2></button>
+
+        <!-- The Modal -->
+        <div id="bear-modal" class="modal">
+
+         <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="card-img" id="bear-expanded-img" src="images/bear_trap.png" alt="Bear Trap">
+                <h2>Bear Trap 15 Miler</h2>
+                <div id="bear-synopsis">
                     <p>
-                        This race is a party. It’s an Aravaipa Trail race so they have multiple races of different distance going at the same 
-                        time. If you’ve never run an Aravaipa race I would highly recommend it. They know how to make a race feel like an event, 
-                        every aid-station has a loud speaker with music, hot food, and lots of volunteers! The chicken noodle soup and grilled cheese
-                        were life savers later on in the race.
+                        I loved this race, and I may be biased as the course record holder, but this course was awesome! The Bear Trap races had 3 races, the 15 miles,
+                        the 7.5 miler, and a 4 mile race. I can only speak to the 15- and 7.5-mile races. I don’t normally love loop races but the 15 miler was just 
+                        2 loops of the 7.5 mile course. The second being run in reverse.
                     </p>
                     <p>
-                        For the hundred-mile distance it was a 20-mile loop that was repeated 5 times. I think that for a first time 100 Miler 
-                        it was great to do loops. It allowed me to see my support crew every 20 miles, refill my pack with the fuel I wanted. 
-                        It provided an easy way for me to recognize progress. I don’t know if I would do a looped course again in the future 
-                        because I love the exploration aspect of trail running and repeating the same loop repeatedly doesn’t feel quite as 
-                        exciting.
+                        This course is wild and rugged.  You start by running up some nice, groomed trails, gaining elevation the whole time. At about 3 miles you 
+                        leave the trail and begin running along the ridge line, where you are greeted by some amazing views of the Salt Lake Valley and Toole Valley. 
+                        After that you are at nearly 6 miles and you’re wondering how on earth you’ll make it back to the beginning in just another 1.5 miles, but then 
+                        you essentially dive off the side of the mountain and run straight down to the starting area, and come back into the one and only aid station.
                     </p>
                     <p>
-                        The loop it self comprise of some rolling desert hills, as the trail winds through the washes of the Arizona desert you 
-                        often get to be in the shade and sand or in the sun and on the rocky trails. The Trails weren’t too technical but did 
-                        provide some fun sections of flowy downhill, technical steep descents, and grueling climbs. The worst part of each loop 
-                        was the sandy double track that lasted several miles. It was uphill in one of the directions that added to the grind of 
-                        that section.  
+                        With the race only being 15 miles long I didn’t expect much from the aid station, but it had it all. They had bottles of coke, candy, and even 
+                        some hot food. The Aid Station has lots of helpers because of all the spectators and racers that have finished now helping.
                     </p>
                     <p>
-                        As I stated at the beginning, I would recommend Aravaipa races to anyone. They are very well organized and super fun. 
-                        As far as recommending the 100 mile distance at the Cold Water Rumble, I would say if you want to get your first 100 miler
-                         done it would be a great choice, if you’re from the Arizona area and a 100 miler veteran then this won’t provide much 
-                         novelty and probably wont be that exciting for you.
+                        After you raid the tables at the aid station you turn around and have to climb straight back up the side of the mountain. This climb was brutal! 
+                        It was off trail, steep and loose. It never seemed to end, but when it did finally end it was amazing. The view was refreshing and amazing!
+                        After the brutal climb its then an amazing decent back to the finish line. Since you do most of the climbing that loop in the first 2 miles 
+                        its just 5 miles of nice flowy trail back to the beginning!
+                    </p>
+                    <p>
+                        I would recommend this race to anyone looking for challenge. This race is not easy, but it is rewarding and lots of fun! The climb will leave 
+                        you breathless and gasping for air but the views make it worth it! The turn around was hard, destroying your quads on the decent in to the aid 
+                        station and then having to climb back up it all was so challenging and beat up the legs like nothing else I had done in the past!
                     </p>
                 </div>
                 <div>
-                    <h3 id="cold-scores">Scores</h3>
-                    <p>Organization: 9/10</p>
-                    <p>Aid-Stations: 10/10</p>
-                    <p>Course Quality: 7/10</p>
-                    <p>Overall: 8.7/10</p>
+                    <h3 id="bear-scores">Scores</h3>
+                    <p>Organization: 7/10</p>
+                    <p>Aid-Stations: 7/10</p>
+                    <p>Course Quality: 10/10</p>
+                    <p>Overall: 8/10</p>
+                </div>
+
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("bear-modal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("bear-button");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+        <!--  -->
+            
+            
+            <section id="bear-trap-card" class="shoebox">
+                <img class="card-img" src="images/bear_trap.png" alt="Bear Trap">
+                <h2>Bear Trap 15 Miler</h2>
+            </section>
+            <section id="bear-info" class="expanded-shoebox">
+                <img class="card-img" id="bear-expanded-img" src="images/bear_trap.png" alt="Bear Trap">
+                <h2>Bear Trap 15 Miler</h2>
+                <div id="bear-synopsis">
+                    <p>
+                        I loved this race, and I may be biased as the course record holder, but this course was awesome! The Bear Trap races had 3 races, the 15 miles,
+                         the 7.5 miler, and a 4 mile race. I can only speak to the 15- and 7.5-mile races. I don’t normally love loop races but the 15 miler was just 
+                         2 loops of the 7.5 mile course. The second being run in reverse.
+                    </p>
+                    <p>
+                        This course is wild and rugged.  You start by running up some nice, groomed trails, gaining elevation the whole time. At about 3 miles you 
+                        leave the trail and begin running along the ridge line, where you are greeted by some amazing views of the Salt Lake Valley and Toole Valley. 
+                        After that you are at nearly 6 miles and you’re wondering how on earth you’ll make it back to the beginning in just another 1.5 miles, but then 
+                        you essentially dive off the side of the mountain and run straight down to the starting area, and come back into the one and only aid station.
+                    </p>
+                    <p>
+                        With the race only being 15 miles long I didn’t expect much from the aid station, but it had it all. They had bottles of coke, candy, and even 
+                        some hot food. The Aid Station has lots of helpers because of all the spectators and racers that have finished now helping.
+                    </p>
+                    <p>
+                        After you raid the tables at the aid station you turn around and have to climb straight back up the side of the mountain. This climb was brutal! 
+                        It was off trail, steep and loose. It never seemed to end, but when it did finally end it was amazing. The view was refreshing and amazing!
+                         After the brutal climb its then an amazing decent back to the finish line. Since you do most of the climbing that loop in the first 2 miles 
+                         its just 5 miles of nice flowy trail back to the beginning!
+                    </p>
+                    <p>
+                        I would recommend this race to anyone looking for challenge. This race is not easy, but it is rewarding and lots of fun! The climb will leave 
+                        you breathless and gasping for air but the views make it worth it! The turn around was hard, destroying your quads on the decent in to the aid 
+                        station and then having to climb back up it all was so challenging and beat up the legs like nothing else I had done in the past!
+                    </p>
+                </div>
+                <div>
+                    <h3 id="bear-scores">Scores</h3>
+                    <p>Organization: 7/10</p>
+                    <p>Aid-Stations: 7/10</p>
+                    <p>Course Quality: 10/10</p>
+                    <p>Overall: 8/10</p>
                 </div>
             </section>
             <!-- <section id="squawpeak-card" class="shoebox">
@@ -166,49 +367,6 @@
                     <p>Overall: </p>
                 </div>
             </section> -->
-            <section id="bear-trap-card" class="shoebox">
-                <img class="card-img" src="images/bear_trap.png" alt="Bear Trap">
-                <h2>Bear Trap 15 Miler</h2>
-            </section>
-            <section id="bear-info" class="expanded-shoebox">
-                <img class="card-img" id="bear-expanded-img" src="images/bear_trap.png" alt="Bear Trap">
-                <h2>Bear Trap 15 Miler</h2>
-                <div id="bear-synopsis">
-                    <p>
-                        I loved this race, and I may be biased as the course record holder, but this course was awesome! The Bear Trap races had 3 races, the 15 miles,
-                         the 7.5 miler, and a 4 mile race. I can only speak to the 15- and 7.5-mile races. I don’t normally love loop races but the 15 miler was just 
-                         2 loops of the 7.5 mile course. The second being run in reverse.
-                    </p>
-                    <p>
-                        This course is wild and rugged.  You start by running up some nice, groomed trails, gaining elevation the whole time. At about 3 miles you 
-                        leave the trail and begin running along the ridge line, where you are greeted by some amazing views of the Salt Lake Valley and Toole Valley. 
-                        After that you are at nearly 6 miles and you’re wondering how on earth you’ll make it back to the beginning in just another 1.5 miles, but then 
-                        you essentially dive off the side of the mountain and run straight down to the starting area, and come back into the one and only aid station.
-                    </p>
-                    <p>
-                        With the race only being 15 miles long I didn’t expect much from the aid station, but it had it all. They had bottles of coke, candy, and even 
-                        some hot food. The Aid Station has lots of helpers because of all the spectators and racers that have finished now helping.
-                    </p>
-                    <p>
-                        After you raid the tables at the aid station you turn around and have to climb straight back up the side of the mountain. This climb was brutal! 
-                        It was off trail, steep and loose. It never seemed to end, but when it did finally end it was amazing. The view was refreshing and amazing!
-                         After the brutal climb its then an amazing decent back to the finish line. Since you do most of the climbing that loop in the first 2 miles 
-                         its just 5 miles of nice flowy trail back to the beginning!
-                    </p>
-                    <p>
-                        I would recommend this race to anyone looking for challenge. This race is not easy, but it is rewarding and lots of fun! The climb will leave 
-                        you breathless and gasping for air but the views make it worth it! The turn around was hard, destroying your quads on the decent in to the aid 
-                        station and then having to climb back up it all was so challenging and beat up the legs like nothing else I had done in the past!
-                    </p>
-                </div>
-                <div>
-                    <h3 id="bear-scores">Scores</h3>
-                    <p>Organization: 7/10</p>
-                    <p>Aid-Stations: 7/10</p>
-                    <p>Course Quality: 10/10</p>
-                    <p>Overall: 8/10</p>
-                </div>
-            </section>
         </main>
         <footer>
             <p>Jorted Runner &copy; 2023 - Danny Ellis</p>
