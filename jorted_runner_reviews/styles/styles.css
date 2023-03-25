@@ -205,4 +205,14 @@ button {
     background-color: #d7d6c1;
     padding-top: 20px;
     margin: 20px;
+    width: 60%;
+}
+
+.card-img {
+    float: left;
+    margin: 150px 50px;
+}
+
+.scores {
+    text-align: center;
 }
