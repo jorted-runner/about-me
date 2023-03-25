@@ -199,10 +199,10 @@ footer .social img {
   }
 
 .button-img{
-    width: 60%;
+    width: 50%;
 }
 button {
     background-color: #d7d6c1;
-    padding: 20px;
+    padding-top: 20px;
     margin: 20px;
 }
