@@ -69,7 +69,7 @@ nav a:hover{
 }
 .home-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 #jorted-runner-crash {
     grid-column: 1;
@@ -160,6 +160,13 @@ footer .social img {
   width: 100px;
   height: 100px;
 }
+
+.shoe-race-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    margin-bottom: -190px;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -176,11 +183,13 @@ footer .social img {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #ECEBE2;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
   }
   
   /* The Close Button */
@@ -200,19 +209,36 @@ footer .social img {
 
 .button-img{
     width: 50%;
+    box-shadow: 5px 5px 10px black;
+
 }
 button {
     background-color: #d7d6c1;
     padding-top: 20px;
-    margin: 20px;
+    margin:  20px auto;
     width: 60%;
+    /* box-shadow: 5px 5px 10px black; */
 }
-
+.modal-title {
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center;
+    background-color: #0C3146;
+    color: #ECEBE2;
+}
+.synopsis {
+    margin: auto 20px;
+    grid-column: 2;
+    grid-row: 2;
+}
 .card-img {
-    float: left;
-    margin: 150px 50px;
+    margin: auto 20px;
+    width: 90%;
+    grid-column: 1;
+    grid-row: 2;
 }
-
 .scores {
     text-align: center;
+    grid-column: 1/3;
+    grid-row: 3;
 }
