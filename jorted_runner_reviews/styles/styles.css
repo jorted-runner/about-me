@@ -68,41 +68,33 @@ nav a:hover{
     opacity: 1;
 }
 .home-grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-}
-#jorted-runner-crash {
-    grid-column: 1;
-    grid-row: 1;
-    margin: 75px 50px 50px 100px;
-    box-shadow: 5px 5px 10px black;
-}
-.home-text {
-    font-family: Georgia (serif);
-}
-#home-p1 {
-    grid-column: 2/5;
-    grid-row: 1;
-    margin: 50px;
-}
-#home-p4 {
-    grid-column: 1/4;
-    grid-row: 2;
-    margin: -25px 50px 50px 50px;
-}
-#jorted-runners {
-    margin: -25px 50px 50px 50px;
-    box-shadow: 5px 5px 10px black;
+    width: 65%;
+    margin: auto;
 }
 
-#pr-list {
-    margin: -25px 50px -150px 50px;
-    background-color: #0C3146;
-    color: #ECEBE2;
+#jorted-runner-crash {
+    float: left;
+    padding: 10px;
+    margin: 20px;
+    background-color: #396E94;
+    box-shadow: 5px 5px 10px black;
+
+}
+#jorted-runners {
+    float: right;
+    padding: 10px;
+    margin: 20px;
+    background-color: #396E94;
     box-shadow: 5px 5px 10px black;
 }
-#pr-title {
-    text-align: center;
+#pr-list {
+    float: left;
+    padding: 10px;
+    margin: 20px;
+    background-color: #396E94;
+    box-shadow: 5px 5px 10px black;
+    color: #ECEBE2;
+
 }
 
 footer {
@@ -144,23 +136,6 @@ footer .social img {
     grid-row: 1;
 }
 
-/* this is from the magnifier assignment */
-* {box-sizing: border-box;}
-
-.img-magnifier-container {
-  position: relative;
-}
-
-.img-magnifier-glass {
-  position: absolute;
-  border: 3px solid #000;
-  border-radius: 50%;
-  cursor: none;
-  /*Set the size of the magnifier glass:*/
-  width: 100px;
-  height: 100px;
-}
-
 .shoe-race-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -180,10 +155,10 @@ footer .social img {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
+}
+
   /* Modal Content/Box */
-  .modal-content {
+.modal-content {
     background-color: #ECEBE2;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -191,10 +166,10 @@ footer .social img {
     width: 70%; /* Could be more or less, depending on screen size */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  
+}
+
   /* The Close Button */
-  .close {
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -202,21 +177,21 @@ footer .social img {
     text-align: left;
     grid-column: 1;
     grid-row: 4;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 .button-img{
     width: 80%;
     border: 2px solid black;
     box-shadow: 5px 5px 10px black;
-
 }
+
 button {
     background-color: #396E94;
     color: #ECEBE2;
