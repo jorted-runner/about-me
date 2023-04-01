@@ -50,7 +50,7 @@ nav a:hover{
     width: 100%;
 }
 #hero-msg {
-    font-family: Trebuchet(sans-serif);
+    font-family: Trebuchet;
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
