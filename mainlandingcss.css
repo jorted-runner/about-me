@@ -118,7 +118,32 @@ p {
 .contact-me h2, h3 {
     margin: 60px;
 }
-
+.btn-right{
+    line-height: 5;
+    background: #8bc8f0;
+    background-image: -webkit-linear-gradient(top, #8bc8f0, #002B5B);
+    background-image: -moz-linear-gradient(top, #8bc8f0, #002B5B);
+    background-image: -ms-linear-gradient(top, #8bc8f0, #002B5B);
+    background-image: -o-linear-gradient(top, #8bc8f0, #002B5B);
+    background-image: linear-gradient(to bottom, #8bc8f0, #002B5B);
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: 'Courier Prime', monospace;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.btn-right:hover {
+    background: #002B5B;
+    background-image: -webkit-linear-gradient(top, #002B5B, #8bc8f0);
+    background-image: -moz-linear-gradient(top, #002B5B, #8bc8f0);
+    background-image: -ms-linear-gradient(top, #002B5B, #8bc8f0);
+    background-image: -o-linear-gradient(top, #002B5B, #8bc8f0);
+    background-image: linear-gradient(to bottom, #002B5B, #8bc8f0);
+    text-decoration: none;
+}
 .btn {
     line-height: 5;
     background: #8bc8f0;
