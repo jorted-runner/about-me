@@ -199,10 +199,10 @@ padding: 50px;
     grid-row: 1;
 }
 .jorted-card {
-    grid-column: 0;
+    grid-column: 2;
     grid-row: 2/3;
 }
-.rafting-card {
+.flight-card {
     grid-column: 1;
     grid-row: 2/3;
 }
