@@ -173,9 +173,9 @@ p {
 }
 
 .bottom-container {
-background-color: #002B5B;
-color: #f9f5eb;
-padding: 50px;
+    background-color: #002B5B;
+    color: #f9f5eb;
+    padding: 50px;
 }
 .bottom-container a {
     color: #f9f5eb;
@@ -189,31 +189,11 @@ padding: 50px;
 }
 
 .Projects {
-    width: 100%;
+    width: 40%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
 }
-.Projects h2 {
-    grid-column: 1/4;
-    grid-row: 1;
-}
-.jorted-card {
-    grid-column: 2;
-    grid-row: 2/3;
-}
-.flight-card {
-    grid-column: 1;
-    grid-row: 2/3;
-}
-.card-img {
-    width: 55%;
-    margin-top: 50px;
-    border: 10px solid black;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px black;
-}
-.card-img:hover {
-    opacity: .6;
-    transform: scale(1.1);
+.Projects p {
+    text-align: justify;
+
 }
